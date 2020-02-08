@@ -28,7 +28,7 @@ public class QtracStepdef extends CucumberRunner {
 		//getDriver("DEFAULT", capabilities, R.CONFIG.get("selenium_host"));
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities = R.CONFIG.get("capabilities");
+//		capabilities = R.CONFIG.get("capabilities");
 		Login = initPage(getDriver("DEFAULT", capabilities, R.CONFIG.get("selenium_host")), QtracLoginPageBase.class);
 	}
 
