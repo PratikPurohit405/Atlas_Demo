@@ -41,7 +41,7 @@ import com.qaprosoft.carina.demo.gui.pages.NewsPage;
 /**
  * This sample shows how create Web test.
  * 
- * @author qpsdemo
+ * @author pratik
  */
 public class WebSampleTest extends AbstractTest {
     @Test(dataProvider = "SingleDataProvider", description = "JIRA#AUTO-0008")
@@ -51,7 +51,10 @@ public class WebSampleTest extends AbstractTest {
     @TestTag(name = "specialization", value = "xlsx")
     @XlsDataSourceParameters(path = "xls/demo.xlsx", sheet = "GSMArena", dsUid = "TUID", dsArgs = "brand, model, display, camera, ram, battery")
     public void testModelSpecs(String brand, String model, String display, String camera, String ram, String battery) {
-        // Open GSM Arena home page and verify page is opened
+    	//feature Web Sample Test
+    	// Open GSM Arena home page and verify page is opened
+    	
+    	
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened");
